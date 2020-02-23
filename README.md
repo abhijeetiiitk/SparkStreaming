@@ -1,1 +1,1 @@
-# SparkStreaming
+# Scala & Spark Streaming

@@ -17,7 +17,9 @@ object WordCount {
     // Convert these words to lowercase
     val lowerCaseWords = words.map(word => word.toLowerCase())
     // Count up the occurence of each unique word
-    val wordCounts = lowerCaseWords.countByValue()
+    //val wordCounts = lowerCaseWords.countByValue()
+
+    val wordCounts = words.map(x => (x, 1)).reduceByKey(_ + _)
 
     // Print the first 20 results
     val sample = wordCounts.take(20)

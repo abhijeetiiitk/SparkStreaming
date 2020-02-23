@@ -1,5 +1,5 @@
+target/
 *.class
-target
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -15,7 +15,7 @@ target
 .settings/
 
 #IntelliJ
-.idea
+.idea/*
 *.iml
 
 derby.log
